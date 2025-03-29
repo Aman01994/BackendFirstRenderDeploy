@@ -1,0 +1,22 @@
+const express = require('express');
+const deliveryg = express.Router();
+
+
+
+deliveryg.get('/profiledetails',(req,res)=>{
+    // fetch details from mongodb 
+    res.status(200).json({
+        message : 'Profile Details'
+    })
+})
+
+
+deliveryg.get('/hisorderdetails',(req,res)=>{
+    // fetch details from mongodb 
+    res.status(200).json({
+        message : 'History Order Details'
+    })
+})
+
+
+module.exports = { deliveryg }
