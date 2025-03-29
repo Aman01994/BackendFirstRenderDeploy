@@ -14,7 +14,7 @@ app.use('/restaurant',restaurant)
 app.use('/deliveryg',deliveryg)
 app.use('/custcare',custcare)
 
-Port = process.env.Port
+Port = process.env.Port || 5000
 
 
 
